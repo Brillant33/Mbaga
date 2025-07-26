@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amafoni Ku Giciro Gito</title>
+  <title>IRATURINZE SHOP </title>
   <style>
     * {margin:0; padding:0; box-sizing:border-box;}
     body {
@@ -40,10 +40,8 @@
       overflow: hidden;
       text-align: center;
       padding: 10px;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: scale(1.05);
+      cursor: pointer;
+      position: relative;
     }
     .card img {
       width: 100%;
@@ -51,10 +49,17 @@
       object-fit: cover;
       border-radius: 5px;
     }
-    .price {
+    .info {
+      display: none;
+      background: rgba(0,0,0,0.9);
       color: #00ffcc;
-      font-weight: bold;
-      margin: 5px 0;
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
     }
     footer {
       text-align: center;
@@ -73,59 +78,83 @@
   </style>
 </head>
 <body>
-  <header>Amafoni Meza Ku Giciro Gito</header>
+  <header>IRATURINZE SHOP </header>
 
   <!-- Android Phones -->
   <h2>📱 Android</h2>
   <div class="grid">
-    <div class="card">
+    <div class="card" onclick="showInfo(this)">
       <img src="https://via.placeholder.com/200" alt="Tecno Pop 10">
       <h4>Tecno Pop 10</h4>
-      <div class="price">600000fbu</div>
+      <div class="info">Igiciro: 600000fbu<br>Stockage: 64GB<br>Battery: 4000mAh</div>
     </div>
-    <div class="card">
+    <div class="card" onclick="showInfo(this)">
       <img src="https://via.placeholder.com/200" alt="Infinix Smart 10">
       <h4>Infinix Smart 10</h4>
-      <div class="price">600000fbu</div>
+      <div class="info">Igiciro: 600000fbu<br>Stockage: 64GB<br>Battery: 5000mAh</div>
     </div>
-    <div class="card">
+    <div class="card" onclick="showInfo(this)">
       <img src="https://via.placeholder.com/200" alt="Nokia C32">
       <h4>Nokia C32</h4>
-      <div class="price"></div>
+      <div class="info">Igiciro: 550000fbu<br>Stockage: 128GB<br>Battery: 5000mAh</div>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200" alt="itel A50">
+    <div class="card" onclick="showInfo(this)">
+      <img src="https://via.placeholder.com/200" alt="itel A70">
       <h4>itel A70</h4>
-      <div class="price">580000</div>
+      <div class="info">Igiciro: 580000fbu<br>Stockage: 32GB<br>Battery: 4000mAh</div>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200" alt="Basio">
+    <div class="card" onclick="showInfo(this)">
+      <img src="https://via.placeholder.com/200" alt="Sharp">
       <h4>Sharp</h4>
-      <div class="price">340000fbu</div>
+      <div class="info">Igiciro: 340000fbu<br>Stockage: 32GB<br>Battery: 3000mAh</div>
     </div>
-    <div class="card">
+    <div class="card" onclick="showInfo(this)">
       <img src="https://via.placeholder.com/200" alt="Docom 64GB">
       <h4>Docom 64GB</h4>
-      <div class="price">320000fbu</div>
+      <div class="info">Igiciro: 320000fbu<br>Stockage: 64GB<br>Battery: 3500mAh</div>
     </div>
-    <div class="card">
+    <div class="card" onclick="showInfo(this)">
       <img src="https://via.placeholder.com/200" alt="Docom 32GB">
       <h4>Docom 32GB</h4>
-      <div class="price">240000fbu</div>
+      <div class="info">Igiciro: 240000fbu<br>Stockage: 32GB<br>Battery: 3000mAh</div>
     </div>
   </div>
 
   <!-- Telephone ntonyi -->
   <h2>☎️ Telephone Ntonyi</h2>
   <div class="grid">
-    <div class="card"><h4>itel 2160</h4><div class="price">75000</div></div>
-    <div class="card"><h4>itel 5082</h4><div class="price">95000</div></div>
-    <div class="card"><h4>itel 5606</h4><div class="price">85000</div></div>
-    <div class="card"><h4>itel 5609</h4><div class="price">85000</div></div>
-    <div class="card"><h4>itel 5615</h4><div class="price">120000</div></div>
-    <div class="card"><h4>Tecno 353</h4><div class="price">120000</div></div>
-    <div class="card"><h4>Tecno 528</h4><div class="price">130000</div></div>
-    <div class="card"><h4>Tecno 101</h4><div class="price">75000</div></div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>itel 2160</h4>
+      <div class="info">Igiciro: 75000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>itel 5082</h4>
+      <div class="info">Igiciro: 95000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>itel 5606</h4>
+      <div class="info">Igiciro: 85000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>itel 5609</h4>
+      <div class="info">Igiciro: 85000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>itel 5615</h4>
+      <div class="info">Igiciro: 120000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>Tecno 353</h4>
+      <div class="info">Igiciro: 120000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>Tecno 528</h4>
+      <div class="info">Igiciro: 130000fbu</div>
+    </div>
+    <div class="card" onclick="showInfo(this)">
+      <h4>Tecno 101</h4>
+      <div class="info">Igiciro: 75000fbu</div>
+    </div>
   </div>
 
   <div class="contact">
@@ -135,5 +164,14 @@
   </div>
 
   <footer>&copy; 2025 Amafoni Shop</footer>
+
+  <script>
+    function showInfo(card) {
+      let infos = document.querySelectorAll('.info');
+      infos.forEach(i => i.style.display = 'none'); // Hisha izindi info zose
+      let info = card.querySelector('.info');
+      if (info) info.style.display = 'block'; // Erekana iy'ufyonzeho
+    }
+  </script>
 </body>
 </html>
